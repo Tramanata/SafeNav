@@ -1,0 +1,217 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.quicinc.objectdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Existing camera permission -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:6:22-62
+13
+14    <uses-feature android:name="android.hardware.camera" />
+14-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:7:5-60
+14-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:7:19-57
+15
+16    <!-- NEW: Audio recording permission for video with audio -->
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:10:5-71
+17-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:10:22-68
+18
+19    <!-- NEW: Storage permissions for saving videos and IMU data -->
+20    <!-- For Android 12 and below -->
+21    <uses-permission
+21-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:14:5-15:38
+22        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+22-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:14:22-78
+23        android:maxSdkVersion="32" />
+23-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:15:9-35
+24    <uses-permission
+24-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:16:5-17:38
+25        android:name="android.permission.READ_EXTERNAL_STORAGE"
+25-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:16:22-77
+26        android:maxSdkVersion="32" />
+26-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:17:9-35
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+28
+29    <permission
+29-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.quicinc.objectdetection.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.quicinc.objectdetection.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- For Android 13+ (automatically granted for media files in Documents) -->
+33-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+34    <application
+34-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:21:5-51:19
+35        android:allowBackup="true"
+35-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:24:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.13.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\c185a28368a746338692d7b6f0fd1302\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+37        android:configChanges="orientation|screenSize"
+37-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:22:9-55
+38        android:debuggable="true"
+39        android:extractNativeLibs="true"
+39-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:23:9-41
+40        android:hardwareAccelerated="true"
+40-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:25:9-43
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:26:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:27:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:28:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:29:9-35
+45        android:testOnly="true"
+46        android:theme="@style/AppTheme" >
+46-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:30:9-40
+47        <uses-native-library
+47-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:32:9-34:39
+48            android:name="libcdsprpc.so"
+48-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:33:13-41
+49            android:required="false" />
+49-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:34:13-37
+50
+51        <!-- For GPUv2 delegate -->
+52        <uses-native-library
+52-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:32:9-34:39
+53            android:name="libOpenCL.so"
+53-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:33:13-41
+54            android:required="false" />
+54-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:34:13-37
+55
+56        <activity
+56-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:41:9-50:20
+57            android:name="com.quicinc.objectdetection.MainActivity"
+57-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:41:19-74
+58            android:configChanges="orientation|screenSize"
+58-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:43:13-59
+59            android:exported="true"
+59-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:42:13-36
+60            android:screenOrientation="unspecified" >
+60-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:44:13-52
+61            <intent-filter>
+61-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:45:13-49:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:46:17-69
+62-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:46:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:48:17-77
+64-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:48:27-74
+65            </intent-filter>
+66        </activity>
+67
+68        <service
+68-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+69            android:name="androidx.camera.core.impl.MetadataHolderService"
+69-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+70            android:enabled="false"
+70-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+71            android:exported="false" >
+71-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+72            <meta-data
+72-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+73                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+73-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+74                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+74-->[androidx.camera:camera-camera2:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\f35726b0320070adeb620f3e12a88180\transformed\camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+75        </service>
+76        <!--
+77 Applications that target Android S+ require explicit declaration of
+78             any referenced vendor-provided libraries.
+79        -->
+80        <uses-native-library
+80-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:32:9-34:39
+81            android:name="libOpenCL.so"
+81-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:33:13-41
+82            android:required="false" />
+82-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:34:13-37
+83        <uses-native-library
+83-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:32:9-34:39
+84            android:name="libOpenCL-car.so"
+84-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:33:13-41
+85            android:required="false" />
+85-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:34:13-37
+86        <uses-native-library
+86-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:32:9-34:39
+87            android:name="libOpenCL-pixel.so"
+87-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:33:13-41
+88            android:required="false" />
+88-->C:\Users\trama\OneDrive\Desktop\ai-hub-apps-main\apps\android\ObjectDetection\src\main\AndroidManifest.xml:34:13-37
+89
+90        <provider
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+91            android:name="androidx.startup.InitializationProvider"
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+92            android:authorities="com.quicinc.objectdetection.androidx-startup"
+92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+93            android:exported="false" >
+93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+94            <meta-data
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+96                android:value="androidx.startup" />
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\df299bdd155a3a737d18e777918accdd\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+97            <meta-data
+97-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\6b10c1c7aae4a39ee30de4c6b7091f4b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+98-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\6b10c1c7aae4a39ee30de4c6b7091f4b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+99                android:value="androidx.startup" />
+99-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\6b10c1c7aae4a39ee30de4c6b7091f4b\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+100            <meta-data
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+102                android:value="androidx.startup" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+103        </provider>
+104
+105        <receiver
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+106            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+107            android:directBootAware="false"
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+108            android:enabled="true"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+109            android:exported="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+110            android:permission="android.permission.DUMP" >
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+112                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+115                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+118                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+121                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\trama\.gradle\caches\9.0-milestone-1\transforms\257bf5a24a935522fffe5e2166968c3c\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+122            </intent-filter>
+123        </receiver>
+124    </application>
+125
+126</manifest>

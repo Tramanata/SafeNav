@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.quicinc.objectdetection.ObjectDetection-mergeDebugResources-35:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\trama\\.gradle\\caches\\9.0-milestone-1\\transforms\\bdfa80391be685ffeb6ad40eab9c3a13\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+id fragmentRender
+id indeterminateBar
+id main_content
+id surface
+layout fragment_camera
+layout main_activity
+mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string app_name
+string camera_error
+string request_permission
+string tfLiteLabelsAsset
+string tfLiteModelAsset
+style AppTheme

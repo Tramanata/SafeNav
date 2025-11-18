@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#246E27</color>
+    <string name="app_name">Object Detector</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="request_permission">This app needs camera permission</string>
+    <string name="tfLiteLabelsAsset" translatable="false">labels.txt</string>
+    <string name="tfLiteModelAsset" translatable="false">yolo11.tflite</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
