@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.quicinc.objectdetection.ObjectDetection-mergeDebugResources-30:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\trama\\.gradle\\caches\\9.0-milestone-1\\transforms\\8d6823657e84e0419c8d2b8f82c76db2\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

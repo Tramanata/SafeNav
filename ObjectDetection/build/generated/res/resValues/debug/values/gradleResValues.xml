@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from default config. -->
+    <string name="tfLiteLabelsAsset" translatable="false">labels.txt</string>
+    <!-- Value from default config. -->
+    <string name="tfLiteModelAsset" translatable="false">yolo11.tflite</string>
+
+</resources>
